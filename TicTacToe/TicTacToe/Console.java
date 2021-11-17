@@ -86,7 +86,7 @@ public class Console {
         System.out.println("\n" + board + "\n");
 
         if (winner == Board.State.Blank) {
-            System.out.println("The TicTacToe is a Draw.");
+            System.out.println("It is a tie! Play again to see who wins.");
         } else {
             System.out.println("Player " + winner.toString() + " wins!");
         }
