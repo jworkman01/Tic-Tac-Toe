@@ -101,7 +101,7 @@ public class Window extends JFrame {
      */
     private void loadImages () {
         imageBackground = getImage("background");
-        imageX = getImage("x");
+        imageX = getImage("y");
         imageO = getImage("p");
     }
 
