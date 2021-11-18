@@ -7,7 +7,7 @@ import java.util.HashSet;
  */
 public class Board {
 
-    static final int BOARD_WIDTH = 3;
+    static final int BOARD_WIDTH = 5;
 
     public enum State {Blank, X, O}
     private State[][] board;
