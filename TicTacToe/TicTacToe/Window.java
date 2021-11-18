@@ -194,7 +194,7 @@ public class Window extends JFrame {
                 String s;
 
                 if (board.getWinner() == Board.State.Blank) {
-                    s = "Draw";
+                    s = "It is a tie! Play again to see who wins.";
                 } else {
                     s = board.getWinner() + " Wins! Press to play again!";
                 }
