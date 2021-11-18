@@ -196,7 +196,7 @@ public class Window extends JFrame {
                 if (board.getWinner() == Board.State.Blank) {
                     s = "Draw";
                 } else {
-                    s = board.getWinner() + " Wins!";
+                    s = board.getWinner() + " Wins! Press to play again!";
                 }
 
                 g.drawString(s, 300 - getFontMetrics(g.getFont()).stringWidth(s)/2, 315);
