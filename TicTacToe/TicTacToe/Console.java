@@ -67,7 +67,7 @@ public class Console {
 
         int move = sc.nextInt();
 
-        if (move < 0 || move >= Board.BOARD_WIDTH* Board.BOARD_WIDTH) {
+        if (move < -1 || move >= Board.BOARD_WIDTH* Board.BOARD_WIDTH) {
             System.out.println("\nInvalid move.");
             System.out.println("\nThe index of the move must be between 0 and "
                     + (Board.BOARD_WIDTH * Board.BOARD_WIDTH - 1) + ", inclusive.");
@@ -91,7 +91,13 @@ public class Console {
             System.out.println("Player " + winner.toString() + " wins this game!");
         }
     }
-
+    
+    private void resetMove () {
+        board.reset();
+        System.out.println("Started new game.");
+        System.out.println("X's turn.");
+    }
+        
     /**
      * Reset the game if the player wants to play again.
      * @return      true if the player wants to play again
